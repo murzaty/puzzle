@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+	<title>Sliding Title Puzzle</title>
+</head>
+
+<body onload = "setUp()">
+	<h1>Sliding Tile Puzzle</h1>
+	<div id='container'>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			
+			<li id="li8" draggable="true" ondragstart="dragstart_handler(event)" ondragend="dragend_handler(event)">H</li>
+
+			<li id="li9" droppable="true" ondrop="drop_handler(event)" ondragover="dragover_handler(event)" class="empty"></li>
+		</ul>
+	</div>
+
+</body>
+<script type="text/javascript" src='js/script.js'></script>
+</html>
